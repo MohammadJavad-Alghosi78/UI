@@ -1,1 +1,0 @@
-This repository is a source of UI components for myself

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked {
+  background: #00c853;
+}
+
+input[type="checkbox"]::before {
+  content: "OFF";
+  z-index: 2555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "ON";
+  left: 40px;
+}
